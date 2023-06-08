@@ -1,0 +1,1 @@
+from taipy.config import Config
