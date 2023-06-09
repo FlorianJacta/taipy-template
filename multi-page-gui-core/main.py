@@ -1,4 +1,4 @@
-from taipy.gui import Gui, Markdown, notify
+from taipy.gui import Gui
 from taipy.config import Config 
 
 from pages.root.root import *
@@ -10,8 +10,7 @@ Config.load("config/config.toml")
 def on_change(state, var_name:str, var_value):
     ...
 
-
-pages = {"/":"<|navbar|>",
+pages = {"/":root_md,
          "page_1":page_1_md,
          "page_2":page_2_md}
 
